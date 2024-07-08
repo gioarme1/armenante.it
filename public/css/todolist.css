@@ -1,0 +1,16 @@
+.td {
+    margin-bottom: 50px;
+    margin-top: -50px;
+}
+.inserisci {
+    background: linear-gradient(135deg, rgba(0,138,201,1) 0%, rgba(43,17,90,1) 50%, rgba(241,26,34,1) 100%);
+    border-radius: 12px;
+    color: white;
+
+}
+#todo {
+    margin-top: 30px;
+}
+.div-todolist{
+    background-color: yellow;
+}
