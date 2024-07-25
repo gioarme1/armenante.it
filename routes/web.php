@@ -31,3 +31,6 @@ Route::get('/todolist', function () {
 Route::get('/generapsw', function () {
     return view('generapsw');
 });
+Route::get('/calcolatrice', function () {
+    return view('calcolatrice');
+});
