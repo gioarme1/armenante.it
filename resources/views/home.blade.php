@@ -8,6 +8,8 @@
 <h2> Studio programmazione web.</h2>
     <hr>
 <h4>Ho creato questa pagina dove ho inserito una serie di esercizi</h4>
+    <hr>
+<a href="/armenante.it/public/document/CVgiovanni.pdf" download="CV Giovanni Armenante.pdf">Clicca qui per scaricare il mio CV</a>
 
 @endsection
 

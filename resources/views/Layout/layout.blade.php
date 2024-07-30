@@ -36,10 +36,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="http://127.0.0.1:8000/contact">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a title="Download CV" class="nav-link" href="#">CV</a>
-                </li>
-
             </ul>
         </div>
     </div>

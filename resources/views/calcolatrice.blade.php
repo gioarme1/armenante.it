@@ -18,12 +18,16 @@
         <button class="btn" onclick="appendToDisplay('4')">4</button>
         <button class="btn" onclick="appendToDisplay('5')">5</button>
         <button class="btn" onclick="appendToDisplay('6')">6</button>
+        <button class="btn" onclick="calculateResult()">=</button>
         <button class="btn" onclick="appendToDisplay('1')">1</button>
         <button class="btn" onclick="appendToDisplay('2')">2</button>
         <button class="btn" onclick="appendToDisplay('3')">3</button>
-        <button class="btn" onclick="appendToDisplay('0')">0</button>
         <button class="btn" onclick="appendToDisplay('.')">.</button>
-        <button class="btn" onclick="calculateResult()">=</button>
+        <button class="btn" onclick="appendToDisplay('')"></button>
+        <button class="btn" onclick="appendToDisplay('0')">0</button>
+        <button class="btn" onclick="appendToDisplay('')"></button>
+        <button class="btn" onclick="appendToDisplay('')"></button>
+
     </div>
 </div>
 
