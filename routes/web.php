@@ -34,3 +34,11 @@ Route::get('/generapsw', function () {
 Route::get('/calcolatrice', function () {
     return view('calcolatrice');
 });
+
+use App\Http\Controllers\ImageController;
+
+Route::get('/upload', function () {
+    return view('upload');
+});
+
+Route::post('/upload', [ImageController::class, 'upload'])->name('upload');

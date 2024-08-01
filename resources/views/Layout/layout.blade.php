@@ -30,9 +30,13 @@
                         <li><a class="dropdown-item" href="http://127.0.0.1:8000/calcolatrice">Calcolatrice</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://127.0.0.1:8000/about">About</a>
-                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        OpenAI
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8000/upload">Animal Detection</a></li>
+                    </ul>
                 <li class="nav-item">
                     <a class="nav-link" href="http://127.0.0.1:8000/contact">Contact</a>
                 </li>
