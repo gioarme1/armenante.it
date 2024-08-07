@@ -17,17 +17,15 @@ class ImageController extends Controller
         $image = $request->file('image');
         $imagePath = $image->getPathName();
 
-        // Invio dell'immagine all'API di visione (sostituisci con i dettagli della tua API)
+        // Invio dell'immagine all'API di vision
         $response = Http::attach(
             'image', file_get_contents($imagePath), $image->getClientOriginalName()
         )->post('https://api.openai.com/v1/chat/completions', [
             'api_key' => 'Inserisci la tua API KEY',
         ]);
 
-        // Estrazione dei dati dalla risposta dell'API
         $animals = $response->json();
 
-        // Verifica del tipo di dati e conversione a stringa se necessario
         if (!is_array($animals)) {
             $animals = (array)$animals;
         }
