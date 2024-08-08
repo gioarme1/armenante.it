@@ -42,3 +42,8 @@ Route::get('/upload', function () {
 });
 
 Route::post('/upload', [ImageController::class, 'upload'])->name('upload');
+
+use App\Http\Controllers\WeatherController;
+
+Route::get('/weather', [WeatherController::class, 'index']);
+Route::post('/weather', [WeatherController::class, 'getWeather']);

@@ -28,6 +28,8 @@
                         <li><a class="dropdown-item" href="http://127.0.0.1:8000/generapsw">Genera PSW</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="http://127.0.0.1:8000/calcolatrice">Calcolatrice</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="http://127.0.0.1:8000/weather">Meteo</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
