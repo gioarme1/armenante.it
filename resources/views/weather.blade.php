@@ -6,18 +6,19 @@
 
 <div class="container">
     <h1>Meteo</h1>
-    <br>
-    <form action="/weather" method="POST">
-        @csrf
-        <input type="text" name="city" placeholder="Inserisci Città" required>
-        <button type="submit">Cerca Meteo</button>
+
+    <form method="GET" action="{{ route('weather') }}">
+        <label for="city">Inserisci una città:</label>
+        <input type="text" id="city" name="city" placeholder="Rome">
+        <button type="submit">Vedi Meteo</button>
     </form>
+
     @if (isset($weather))
-        <h2>{{ $weather['name'] }}</h2>
-        <p>{{ $weather['weather'][0]['description'] }}</p>
-        <p>{{ $weather['main']['temp'] }} &deg;C</p>
+        <h2>Meteo per {{ $weather['name'] }}</h2>
+        <p>Temperatura: {{ $weather['main']['temp'] }}°C</p>
+        <p>Condizioni: {{ $weather['weather'][0]['description'] }}</p>
     @elseif (isset($error))
-        <p class="error">{{ $error }}</p>
+        <p>{{ $error }}</p>
     @endif
 </div>
 
